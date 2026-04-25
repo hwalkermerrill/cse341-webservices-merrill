@@ -1,6 +1,12 @@
 const mongoose = require('mongoose');
-require('dotenv').config(); // Load environment variables
+// const dotenv = require('dotenv');
+// dotenv.config();
 const uri = process.env.MONGO_URI;
+
+if (!uri) {
+  console.error("MONGO_URI is not defined. Check your environment variables.");
+  process.exit(1);
+}
 
 mongoose.connect(uri)
   .then(() => {

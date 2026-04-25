@@ -1,16 +1,24 @@
-// Load environment variables (must be on top)
-const dotenv = require('dotenv');
-dotenv.config();
-
-// Constants go here
-const Joi = require('joi'); // Capitalize class objects
-const express = require('express');
+// Required Imports (Core-Middleware-Routes-Models-Utils)
+const express = require("express");
+// const session = require("express-session");
+const path = require("path");
+const Joi = require('joi');
 const mongoose = require('./DataBase/connection');
-const app = express();
-const port = process.env.PORT || 3000;
 
+// Constants
+const app = express();
+const PORT = process.env.PORT || 3000;
+const NODE_ENV = process.env.NODE_ENV?.toLowerCase() || "production";
+
+// App Configuration
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
+
+// Routes
 app.use('/', require('./routes/index'));
 
-app.listen(port, function () {
-  console.log(`Server is running on port ${port}`);
+// Start Server
+app.listen(PORT, async () => {
+  console.log(`Server is running on http://127.0.0.1:${PORT}`);
 });

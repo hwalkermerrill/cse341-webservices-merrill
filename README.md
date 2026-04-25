@@ -1,8 +1,8 @@
-# cse-431-web-services
+# CSE-341-Web-Services
 
 # hwalkermerrill.github.io
 
-Class repository for CSE 431 - Web Services, 2026.11.1
+Class repository for CSE 341 - Web Services, 2026.25.04
 
 ## Author
 

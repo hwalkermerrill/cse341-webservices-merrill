@@ -1,11 +1,11 @@
 {
-  "name": "cse-431-web-services",
-  "version": "1.0.0",
-  "description": "Class repository for CSE 431 - Web Services, 2026.11.1",
+  "name": "cse-341-web-services",
+  "version": "1.1.0",
+  "description": "Class repository for CSE 341 - Web Services, 2026.25.4",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "dev": "nodemon --env-file=.env server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "packageManager": "pnpm@10.28.1",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/hwalkermerrill/CSE-341-Web-Services/issues"

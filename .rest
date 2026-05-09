@@ -1,23 +1,24 @@
-GET http://localhost:3000/ HTTP/1.1
+GET http://localhost:3000/
 
 ###
-GET https://cse341-webservices-merrill.onrender.com HTTP/1.1
+GET https://cse341-webservices-merrill.onrender.com
 
 ###
-GET http://localhost:3000/contacts HTTP/1.1
+GET http://localhost:3000/contacts
 
 ###
-GET http://localhost:3000/contacts/69f5fea8cdf823bab019618a HTTP/1.1
+GET http://localhost:3000/contacts/69f5fea8cdf823bab019618a
 
 ###
-GET https://cse341-webservices-merrill.onrender.com/contacts HTTP/1.1
+GET https://cse341-webservices-merrill.onrender.com/contacts
 
 ###
-GET https://cse341-webservices-merrill.onrender.com/contacts/69f5fea8cdf823bab019618a HTTP/1.1
+GET https://cse341-webservices-merrill.onrender.com/contacts/69f5fea8cdf823bab019618a
 
 ### Test Post for lesson 3
 POST http://localhost:3000/contacts
-Content-Type: application/json 
+Content-Type: application/json
+
 {
   "firstName": "Dawid",
   "lastName": "Atenborough",
@@ -27,11 +28,12 @@ Content-Type: application/json
 }
 
 ### Get for video display purposes for lesson 3
-GET https://cse341-webservices-merrill.onrender.com/contacts HTTP/1.1
+GET https://cse341-webservices-merrill.onrender.com/contacts
 
 ### Test Put for lesson 3
-PUT http://localhost:3000/contacts/PUT_ID_HERE
+PUT http://localhost:3000/contacts/69fee8525632e51644464ef5
 Content-Type: application/json
+
 {
   "firstName": "David",
   "lastName": "Attenborough",
@@ -41,4 +43,4 @@ Content-Type: application/json
 }
 
 ### Delete test data for lesson 3
-DELETE http://localhost:3000/contacts/DELETE_ID_HERE
+DELETE http://localhost:3000/contacts/69fee8525632e51644464ef5

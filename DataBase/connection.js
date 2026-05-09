@@ -1,9 +1,8 @@
 // Try to troubleshoot dns errors
 const dns = require('dns');
-dns.setServers(['1.1.1.1', '8.8.8.8']);
+// dns.setServers(['208.67.222.222', '208.67.220.220']); // OpenDNS
 
 const mongoose = require('mongoose');
-const dotenv = require('dotenv').config();
 // dotenv.config();
 const uri = process.env.MONGO_URI;
 

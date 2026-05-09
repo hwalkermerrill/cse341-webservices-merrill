@@ -38,6 +38,7 @@ const createContact = (req, res, next) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday
   });
+  console.log("POST /contacts hit, body:", req.body);
 
   newContact.save()
     .then((result) => {

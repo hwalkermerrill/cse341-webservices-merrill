@@ -2,8 +2,13 @@
 const routes = require('express').Router();
 const contactsController = require('../controllers/contacts');
 
-// Routes to export
+// GET routes
 routes.get('/', contactsController.getContacts);
 routes.get('/:id', contactsController.getContactById);
+
+// POST, PUT, DELETE routes
+routes.post('/', contactsController.createContact);
+routes.put('/:id', contactsController.updateContact);
+routes.delete('/:id', contactsController.deleteContact);
 
 module.exports = routes;

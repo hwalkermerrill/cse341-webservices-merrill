@@ -14,3 +14,31 @@ GET https://cse341-webservices-merrill.onrender.com/contacts HTTP/1.1
 
 ###
 GET https://cse341-webservices-merrill.onrender.com/contacts/69f5fea8cdf823bab019618a HTTP/1.1
+
+### Test Post for lesson 3
+POST http://localhost:3000/contacts
+Content-Type: application/json 
+{
+  "firstName": "Dawid",
+  "lastName": "Atenborough",
+  "email": "big_dave@bafta_big.com",
+  "favoriteColor": "white",
+  "birthday": "1926-05-09"
+}
+
+### Get for video display purposes for lesson 3
+GET https://cse341-webservices-merrill.onrender.com/contacts HTTP/1.1
+
+### Test Put for lesson 3
+PUT http://localhost:3000/contacts/PUT_ID_HERE
+Content-Type: application/json
+{
+  "firstName": "David",
+  "lastName": "Attenborough",
+  "email": "david.attenborough@gmail.com",
+  "favoriteColor": "blue",
+  "birthday": "1926-05-08"
+}
+
+### Delete test data for lesson 3
+DELETE http://localhost:3000/contacts/DELETE_ID_HERE

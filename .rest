@@ -31,7 +31,7 @@ Content-Type: application/json
 GET https://cse341-webservices-merrill.onrender.com/contacts
 
 ### Test Put for lesson 3
-PUT http://localhost:3000/contacts/69fee8525632e51644464ef5
+PUT http://localhost:3000/contacts/69feea1f4eb9846ed0728923
 Content-Type: application/json
 
 {
@@ -43,4 +43,4 @@ Content-Type: application/json
 }
 
 ### Delete test data for lesson 3
-DELETE http://localhost:3000/contacts/69fee8525632e51644464ef5
+DELETE http://localhost:3000/contacts/69feea1f4eb9846ed0728923
